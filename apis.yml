@@ -1,23 +1,61 @@
 aid: bigspoon1d45
+
 name: Bigspoon1d45
-description: 'Bigspoon1d45 is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Bigspoon1d45 is a placeholder company identified in the API Evangelist secondary-market harvest. It currently lacks publicly available documentation, a dedicated website, or known API endpoints. The profile exists to enable future enrichment once the company establishes an online presence and publishes its API specifications. This entry will be updated as more information becomes available.'
+
 url: https://raw.githubusercontent.com/api-evangelist/bigspoon1d45/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-28 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-28'
+
 modified: '2026-09-28'
+
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: The company provides services and has no public API.
+  evidence:
+    - url: https://www.bigspoonco.com
+      status: 200
+  checked: '2026-09-28'
+
 tags:
 - Company
-apis: []
+- API
+- Placeholder
+- Data
+- Harvest
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
-- type: Website
-  url: https://equityzen.com/company/bigspoon1d45
+
+  - type: Hosts
+    url: hosts/bigspoon1d45-hosts.yml
+  - type: Vendors
+    url: vendors/bigspoon1d45-vendors.yml
+  - type: DomainSecurity
+    url: security/bigspoon1d45-domain-security.yml
+  - type: Website
+    url: https://equityzen.com/company/bigspoon1d45
+
+apis: []
+x-enrichment:
+  date: '2026-09-28'
+  status: minimal
+  artifacts_added: 2
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
