@@ -30,6 +30,11 @@ x-coverage:
 
 tags:
 - Company
+- Placeholder
+- Data
+- Harvest
+tags_raw:
+- Company
 - API
 - Placeholder
 - Data
